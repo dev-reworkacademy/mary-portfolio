@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ajoma Mary — design studio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer="defer" src="js/main.js"></script>
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo2-orange.svg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo2-orange.svg" />
+    <link rel="mask-icon" href="/static/meta/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="preconnect" href="https://cdn.sanity.io" />
+    <link rel="manifest" href="/static/meta/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="description" content="Ajoma Mary — A care oriented designer" />
+    <meta name="keywords" content="Ajoma,studio,Nigeria,design,branding,studio" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="robots" content="all" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ajoma Mary " />
+    <meta name="twitter:description" content="Ajoma Mary — A care oriented designer" />
+    <meta name="twitter:image" content="https://display.care/static/meta/og.jpg" />
+    <meta property="og:url" content="https://display.care" key="ogurl" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ajoma Mary " />
+    <meta property="og:description" content="Ajoma Mary — A care oriented designer" />
+    <meta property="og:image" content="images/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-213798478-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "UA-213798478-1");
+    </script>
+</head>
+
+<body class="sans f0 lh100">
+    <div id="loader" class="fix top left right bottom bg-yellow c-red z10 df fc jcc aic">
+        <div id="spinner"><canvas id="spinner-canvas"></canvas></div>
+        <span id="loader-percent">0</span>
+    </div>
+    <noscript id="no-js" class="fix top left right bottom bg-red c-white z10 df jcc aic"><span
+            class="loader-percent">Please enable JS to view this site</span></noscript>
+    <div id="app" data-hydra-root="" data-scroll-content="">
+        <main data-hydra-content="home" class="bg-white" id="home">
+            <div id="sail-white" class="sail pen fix top left bottom right z8"></div>
+            <aside id="page-links" class="page-links z9 pen">
+                <a id="page-resources" class="pea" href="#">
+                    <div class="page-link--bg bg-red fx"></div>
+                    <div class="page-link--fg df fc jcb aic">
+                        <svg viewBox="0 0 46 46" fill="none">
+                            <use xlink:href="#p-resources"></use>
+                        </svg>
+                        <div class="df aic jcb serif c-white oh">
+                            <span class="name">About</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a id="page-works" class="pea" href="/works.html">
+                    <div class="page-link--bg bg-orange fx"></div>
+                    <div class="page-link--fg df fc jcb aic">
+                        <svg width="46" height="46" viewBox="0 0 46 46" fill="none">
+                            <use xlink:href="#p-works"></use>
+                        </svg>
+                        <div class="df aic jcb serif c-white oh">
+                            <span class="name">Works</span>
+                        </div>
+                    </div>
+                </a><a aria-label="about" id="page-about" class="pen" href="/">
+                    <div class="page-link--bg bg-blue"></div>
+                </a>
+            </aside>
+            <header-mary-info></header-mary-info>
+            <div class="page-wrapper">
+                <div class="page-bg" data-scroll-section="" data-scroll-track="bg"></div>
+                <header class="hero" data-scroll-section="">
+                    <h1 class="title serif f6 fw500">
+                        <span class="title-line aib"><span id="title-shaping">Shaping</span>
+
+                            <span class="the oh db" id="title-the" style="color:#FF9776">
+
+                                <svg class="db" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 11.550000190734863 82.92500305175781 46.95000076293945" data-asc="0.8"
+                                    width="82.92500305175781" height="46.95000076293945">
+                                    <defs />
+                                    <g>
+                                        <g>
+                                            <g transform="translate(0, 0)">
+                                                <path fill="#FF9776"
+                                                    d="M3.95 58.50Q2.15 58.50 1.08 57.48Q0 56.45 0 54.75Q0 53.45 0.72 51.77Q1.45 50.10 3.10 48.25Q6.50 44.35 10.68 41.85Q14.85 39.35 19.70 37.80Q20.00 36.95 20.55 35Q21.10 33.05 21.80 30.45Q22.50 27.85 23.25 25.15Q21.30 28.15 19.05 30.98Q16.80 33.80 14.43 36.08Q12.05 38.35 9.72 39.67Q7.40 41 5.30 41Q4.05 41 3.08 40.25Q2.10 39.50 1.85 37.75Q1.80 37.40 1.78 37.08Q1.75 36.75 1.75 36.40Q1.75 34.20 2.50 31.80Q3.25 29.40 4.38 26.98Q5.50 24.55 6.67 22.20Q7.85 19.85 8.65 17.85Q8.75 17.70 8.75 17.57Q8.75 17.45 8.75 17.40Q8.75 17.20 8.60 17.20Q8.30 17.20 7.50 17.85Q5.80 19.25 4 20.25Q2.20 21.25 0.65 21.35L0.60 21.35Q0.15 21.35 0.15 21.05Q0.15 20.60 0.80 20.50Q1.65 20.40 2.88 19.72Q4.10 19.05 5.45 18.05Q6.80 17.05 8.03 15.97Q9.25 14.90 10.13 14Q11 13.10 11.25 12.60Q11.35 12.35 11.97 12.15Q12.60 11.95 13.20 11.95Q13.75 11.95 14.15 12.10Q14.55 12.25 14.45 12.60Q14.10 13.15 13.13 14.77Q12.15 16.40 10.88 18.70Q9.60 21 8.32 23.57Q7.05 26.15 6.08 28.67Q5.10 31.20 4.70 33.25Q4.60 33.90 4.55 34.48Q4.50 35.05 4.50 35.60Q4.50 37.60 5.20 38.42Q5.90 39.25 6.95 39.25Q8.65 39.25 10.65 37.88Q12.65 36.50 14.78 34.17Q16.90 31.85 18.90 28.98Q20.90 26.10 22.68 23.05Q24.45 20 25.75 17.25Q26.15 16.40 26.43 15.67Q26.70 14.95 27.05 14.35Q27.25 13.95 27.40 13.67Q27.55 13.40 27.75 13.30Q28.35 12.30 29.45 11.92Q30.55 11.55 31.65 11.55Q32.60 11.55 33.28 11.67Q33.95 11.80 34.25 11.85Q34.75 11.90 34.75 12.30Q34.75 12.50 34.55 12.67Q34.35 12.85 34 12.85Q32.05 12.65 30.83 14.10Q29.60 15.55 28.50 18.40Q28.10 19.35 27.48 21.32Q26.85 23.30 26.10 25.67Q25.35 28.05 24.63 30.40Q23.90 32.75 23.33 34.55Q22.75 36.35 22.50 37.10Q25.00 36.40 26.35 36.40Q26.90 36.40 27.10 36.55Q27.25 36.70 27.25 36.90Q27.25 37.10 27.15 37.23Q27.05 37.35 26.85 37.25Q26.65 37.15 26.25 37.15Q25.60 37.15 24.63 37.38Q23.65 37.60 22.83 37.95Q22.00 38.30 21.80 38.80Q18.95 46.05 15.67 50.38Q12.40 54.70 9.33 56.60Q6.25 58.50 3.95 58.50M5.35 57.20Q7.20 57.20 9 55.77Q10.80 54.35 12.45 52.10Q14.10 49.85 15.47 47.30Q16.85 44.75 17.88 42.45Q18.90 40.15 19.40 38.75Q15.30 40.10 11.80 42.35Q8.30 44.60 5.55 48Q4 49.85 3.35 51.48Q2.70 53.10 2.70 54.30Q2.70 55.65 3.43 56.42Q4.15 57.20 5.35 57.20ZM31.80 40.55Q30.40 40.55 29.35 39.90Q27.60 38.85 27.60 36.10Q27.60 34.95 28.00 33.45Q28.35 32.20 29.25 30.73Q30.15 29.25 31.38 27.90Q32.60 26.55 34.05 25.70Q35.50 24.85 36.95 24.85Q37.55 24.85 38 25Q38.60 25.20 39.03 25.73Q39.45 26.25 39.45 27.05Q39.45 27.90 39.03 28Q38.60 28.10 38.60 27.80Q38.60 27.70 38.63 27.60Q38.65 27.50 38.65 27.45Q38.65 27.05 38.43 26.73Q38.20 26.40 37.60 26.40Q36.80 26.40 35.63 27.25Q34.45 28.10 33.23 29.52Q32 30.95 31.08 32.65Q30.15 34.35 29.85 36.05Q29.80 36.30 29.78 36.52Q29.75 36.75 29.75 37Q29.75 38.15 30.28 38.92Q30.80 39.70 31.95 39.70Q33.35 39.70 34.65 38.63Q35.95 37.55 36.98 36.05Q38 34.55 38.50 33.40Q38.90 32.50 39.05 31.85Q39.20 31.20 39.20 30.75Q39.20 30.35 39.13 30.05Q39.05 29.75 38.95 29.55Q38.85 29.25 38.85 29.10Q38.85 28.70 39.18 28.45Q39.50 28.20 39.85 28.20Q40.15 28.20 40.50 28.40Q40.90 28.50 41.60 28.55Q42.30 28.60 43.10 28.60Q43.95 28.60 44.83 28.55Q45.70 28.50 46.35 28.35Q46.45 28.30 46.65 28.30Q47 28.30 47 28.50Q47 28.70 46.65 28.85Q44.90 29.65 43.53 29.70Q42.15 29.75 41.15 29.75Q41.25 31 40.60 32.42Q39.95 33.85 39.25 34.95Q38.40 36.20 37.30 37.50Q36.20 38.80 34.85 39.67Q33.50 40.55 31.80 40.55ZM57 40.50Q56.10 40.50 55.40 40.10Q54.70 39.70 54.35 38.60Q54.30 38.35 54.23 38.02Q54.15 37.70 54.15 37.35Q54.15 36.15 54.48 34.65Q54.80 33.15 55.20 32.15Q55 32.30 54.50 33.15Q54 34 53.25 35.13Q52.50 36.25 51.58 37.38Q50.65 38.50 49.58 39.23Q48.50 39.95 47.30 39.95Q46.50 39.95 45.38 39.50Q44.25 39.05 43.75 38.25Q43.25 37.45 43.25 36.25Q43.25 34.80 43.90 33.08Q44.55 31.35 45.55 29.85Q45.90 29.35 46.35 28.65Q46.80 27.95 47.25 27.42Q47.70 26.90 47.90 26.85Q48.50 26.65 49.30 26.65Q50.15 26.65 50.55 26.85Q50.90 27 50.90 27.20Q50.90 27.45 50.50 27.85Q49.95 28.35 49 29.35Q48.05 30.35 47.13 31.75Q46.20 33.15 45.60 34.85Q45.10 36.20 45.10 37.20Q45.10 38.95 46.50 38.95Q47.70 38.95 49.05 37.95Q50.40 36.95 51.67 35.50Q52.95 34.05 53.98 32.63Q55 31.20 55.55 30.35Q56.05 29.65 56.67 28.55Q57.30 27.45 57.90 26.40Q58.50 25.35 58.85 24.85Q59.20 24.85 59.92 24.98Q60.65 25.10 61.17 25.40Q61.70 25.70 61.45 26.15Q61.15 26.65 60.52 27.70Q59.90 28.75 59.27 29.82Q58.65 30.90 58.30 31.55Q57.10 33.85 56.75 36.50Q56.70 36.70 56.70 36.88Q56.70 37.05 56.70 37.25Q56.70 39.25 58.05 39.25Q58.80 39.25 60.05 38.35Q61.30 37.45 62.63 36.20Q63.95 34.95 65.03 33.77Q66.10 32.60 66.50 32Q66.60 31.85 66.80 31.85Q67 31.85 67.13 32Q67.25 32.15 67.10 32.40Q66.65 33.25 65.58 34.52Q64.50 35.80 63.20 37.08Q61.90 38.35 60.65 39.25Q60 39.75 59 40.13Q58 40.50 57 40.50ZM72.45 40.60Q71.60 40.60 70.95 40.23Q70.30 39.85 70.05 38.80Q69.90 38.25 69.90 37.70Q69.90 36.20 70.67 34.77Q71.45 33.35 72.50 32.13Q73.55 30.90 74.30 30.05Q74.70 29.65 75.22 29Q75.75 28.35 75.75 27.70Q75.75 27.30 75.35 26.92Q74.95 26.55 73.90 26.40Q73.30 26.30 72.78 26.23Q72.25 26.15 71.70 26.15Q70.30 28.05 68.97 29.98Q67.65 31.90 66.15 33.75Q65.80 34.10 65.55 34.10Q65.25 34.10 65.25 33.80Q65.25 33.50 65.55 33.20Q68.25 29.90 70.20 26.15Q69.95 26.15 69.45 26.13Q68.95 26.10 68.65 26.05Q68.30 25.95 68.10 25.75Q67.90 25.55 67.90 25.35Q67.90 25.05 68.15 25Q68.80 24.80 69.55 24.40Q70.30 24 70.95 23.35Q71.65 22.65 72.25 21.88Q72.85 21.10 73.20 20.70Q73.55 20.45 73.95 20.45Q74.20 20.45 74.42 20.60Q74.65 20.75 74.65 21.05Q74.65 21.40 74.35 21.95Q73.90 22.65 73.38 23.50Q72.85 24.35 72.40 25.05Q73.30 25.10 74.20 25.15Q75.10 25.20 76.05 25.20Q76.55 25.20 77.03 25.17Q77.50 25.15 78 25.15Q79.50 25.15 79.50 25.90Q79.50 26.40 78.97 27.13Q78.45 27.85 77.70 28.70Q76 30.65 74.80 32.80Q73.60 34.95 73.20 36.10Q72.80 37.30 72.80 37.90Q72.80 39.10 73.75 39.10Q74.60 39.10 75.83 38.25Q77.05 37.40 78.35 36.17Q79.65 34.95 80.70 33.77Q81.75 32.60 82.20 32Q82.30 31.85 82.50 31.85Q82.70 31.85 82.85 32.02Q83 32.20 82.85 32.45Q82.30 33.30 81.25 34.58Q80.20 35.85 78.90 37.10Q77.60 38.35 76.35 39.25Q75.70 39.75 74.58 40.17Q73.45 40.60 72.45 40.60Z"
+                                                    style="/* stroke-width: 90em; */stroke-dasharray: 9px 77px;stroke-dashoffset: 4em;stroke: #00000082;
+"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+
+                                <!-- <svg class="db" viewBox="0 0 75 52" fill="none">
+                        <path
+                          fill="#FF9776"
+                          d="M1.1 43c-.99 4.84.65 7.46 5.56 7.85 3.86-2.03 5.3-3.34 9.5-6.09l-.27-.4c-3.73 2.17-5.04 3.15-6.48 3.68-1.77.2-3.34-1.38-2.23-5.7L14.2 20.8l5.7-.2 2.55-.2.26-1.3-7.99.06 2.3-8.05-.72-.07-5.57 4-2.03 4.12-5.3.07-.27 1.3 1.25-.12 3.8.13L1.1 42.99zm14.86 7.46l6.68-.46.59-1.44c5.04-11 14.47-26 17.15-27.1 1.18.39 1.7.98 1.7 2.09 0 2.29-6.6 20.62-6.6 24.42a8.02 8.02 0 003.8 3.27l9.29-4.78-.26-.39-7.2 3.47c.13-2.1 7.65-21.67 7.65-25.6 0-3.01-1.83-5.63-5.76-5.7-4.38.4-15.32 18.93-20.36 30.32h-.2L37.9 2.07c-.14-.39-.72-.91-1.05-1.18L24.28 6.33v.52l6.61-2.75-14.93 46.36zm34.35-9.63c-.13 4.72 2.69 9.37 8.32 10.15 2.95-1.18 8.64-5.04 10.6-6.22l-.26-.78c-2.03 1.3-4.84 3.07-7.79 4.78-3.27-.4-4.51-3.6-4.51-8.78 0-.72 0-1.5.06-2.35 1.18 0 10.08-4.98 12.05-6.36 2.81-1.9 6.22-5.95 6.22-8.31 0-2.23-2.75-4-3.47-4-9.3-.71-20.89 10.68-21.22 21.87zm6.49-3.99c.26-7.33 6.54-17.09 11.78-17.09.79 0 1.11.59 1.11 1.57 0 4.26-9.95 15.52-12.9 15.52z"
+                        ></path>
+                      </svg>  -->
+                            </span>
+
+                        </span><span class="title-line df aic"><span class="title-star df jcc aic"><svg
+                                    viewBox="0 0 40 46" fill="none">
+                                    <path fill="#FF9776"
+                                        d="M4.18 36.77a5.1 5.1 0 01-3.37-2.73 5.85 5.85 0 01-.56-4.3 6.24 6.24 0 012.81-3.6c1.69-1.05 4.45-1.72 8.29-2 3.84-.3 6.41-.78 7.72-1.45-1.4-.67-4.02-1.14-7.86-1.43-3.75-.39-6.46-1.06-8.15-2.01a5.68 5.68 0 01-2.8-3.45 5.36 5.36 0 01.55-4.45 5.57 5.57 0 013.51-2.73 5.45 5.45 0 014.36.72c1.59 1.05 3.46 3.2 5.62 6.46 2.15 3.16 3.88 5.17 5.2 6.03-.1-1.53-.99-4.07-2.67-7.61-1.69-3.54-2.53-6.32-2.53-8.33 0-1.63.51-3.02 1.54-4.17A5.49 5.49 0 0119.92 0c1.59 0 2.9.57 3.93 1.72a5.74 5.74 0 011.68 4.17c0 2.01-.84 4.79-2.52 8.33-1.69 3.54-2.58 6.08-2.67 7.61 1.3-.86 3.04-2.87 5.2-6.03 2.15-3.26 4.02-5.41 5.61-6.46a5.45 5.45 0 014.36-.72c1.59.38 2.76 1.3 3.5 2.73.76 1.43.9 2.92.43 4.45a5.65 5.65 0 01-2.67 3.45c-1.69 1.05-4.45 1.72-8.29 2-3.84.3-6.41.77-7.72 1.44 1.4.67 3.98 1.2 7.72 1.58 3.84.3 6.6.91 8.29 1.87a5.67 5.67 0 012.81 3.45 5.36 5.36 0 01-.56 4.45 5.57 5.57 0 01-3.51 2.73c-1.5.38-2.95.14-4.36-.72-1.59-1.05-3.46-3.16-5.62-6.32-2.15-3.25-3.88-5.31-5.2-6.17.1 1.53.99 4.07 2.68 7.6 1.68 3.55 2.52 6.33 2.52 8.34 0 1.63-.56 3.02-1.68 4.16a5.05 5.05 0 01-3.93 1.73c-1.6 0-2.95-.58-4.08-1.73a6.02 6.02 0 01-1.54-4.16c0-2.01.84-4.79 2.53-8.33 1.68-3.54 2.57-6.08 2.66-7.61-1.3.86-3.04 2.92-5.2 6.17-2.15 3.16-4.02 5.27-5.61 6.32-1.4.86-2.9 1.1-4.5.72z">
+                                    </path>
+                                </svg> </span><span id="title-care">Disability Sector</span></span>
+                    </h1>
+                    <p class="title-desc">
+                        I research, plan, design and innovate to provide better outcomes
+                        for those in need.
+                    </p>
+                    <div id="hero-anim--container">
+                        <div id="hero-anim"><canvas id="hero-anim--canvas"></canvas></div>
+                        <div id="hero-anim--bg">
+                            <svg id="m-grid-bg" viewBox="0 0 337 426">
+                                <g stroke="#000" stroke-width=".91" opacity=".1">
+                                    <path
+                                        d="M337 .46H1M337 85.45H1M337 170.45H1M337 255.45H1M337 340.45H1M337 425.45H1M336.55 425V0M252.54 425V0M168.55 425V0M84.55 425V0M.55 425V0">
+                                    </path>
+                                </g>
+                            </svg>
+                            <svg id="d-grid-bg" viewBox="0 0 1051 375">
+                                <g stroke="#000" opacity=".1">
+                                    <path
+                                        d="M.5 0v373.45M95.95 0v373.45M191.41 0v373.45M286.86 0v373.45M382.32 0v373.45M477.77 0v373.45M573.23 0v373.45M668.68 0v373.45M764.14 0v373.45M859.59 0v373.45M955.04 0v373.45M1050.5 0v373.45M1050 .5H0M1050 93.86H0M1050 187.23H0M1050 280.59H0M1050 373.95H0">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="scroll-hint" id="scroll-hint" data-scroll-to="#hero-anim" aria-label="scroll hint">
+                        <span class="arrow"><svg viewBox="0 0 16 46" fill="none">
+                                <path fill="#444"
+                                    d="M7.31 45.69c.38.38 1 .38 1.38 0l6.2-6.2a.98.98 0 00-1.37-1.38L8 43.62l-5.52-5.51a.97.97 0 10-1.37 1.37l6.2 6.2zM7.03 0v45h1.94V0H7.02z">
+                                </path>
+                            </svg> </span><span class="arrow-bg"></span>
+                    </button>
+                </header>
+                <section class="bg-purple-2 about c-white" data-scroll-section="">
+                    <div class="df jcb about-row">
+                        <h2 class="title ttu">About Us</h2>
+                        <p class="serif desc">
+                            I work with the zest to develop inclusive products tailored to
+                            your needs.
+                        </p>
+                    </div>
+                    <div class="df about-row jcb">
+                        <div class="about-circle"></div>
+                        <div>
+                            <div id="about-anim--container">
+                                <div id="about-anim--bg"></div>
+                                <div id="about-anim">
+                                    <canvas id="about-anim--canvas"></canvas>
+                                </div>
+                            </div>
+                            <div class="df about-row about-details">
+                                <p class="about-detail">
+                                    Designing for inclusivity, not only assists people with
+                                    disabilities but benefits everyone. Through our practice,
+                                    ‘Display’ creates person centred products and services that
+                                    are accessible for people of all abilities.
+                                </p>
+                                <p class="about-detail">
+                                    Every person differs in the way they comprehend,
+                                    communicate, see, and handle the world. I strive for my
+                                    work to reflect this diversity. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="vision" data-scroll-section="">
+                    <blockquote class="serif">
+                        <span class="db quote"><svg viewBox="0 0 78 76" fill="none">
+                                <path fill="#00BEA9"
+                                    d="M16.9 42.47c5.3 0 9.48 1.53 12.54 4.58 3.21 2.9 4.82 6.84 4.82 11.83 0 4.82-1.6 8.76-4.82 11.82-3.06 2.9-7.24 4.34-12.55 4.34-5.15 0-9.25-1.45-12.3-4.34C1.52 67.8 0 63.94 0 59.12v-1.93C.32 50.27 6.35 31.2 18.1 0h15.92v1.45L8.2 43.19l1.21.48v.25c2.1-.97 4.58-1.45 7.48-1.45zM61.04 0H77.2v1.45L51.4 43.19l.96.48v.25a18.8 18.8 0 017.48-1.45c5.3 0 9.5 1.53 12.55 4.58 3.22 2.9 4.82 6.84 4.82 11.83 0 4.82-1.6 8.76-4.82 11.82-3.06 2.9-7.24 4.34-12.55 4.34-5.15 0-9.25-1.45-12.3-4.34-2.9-2.9-4.35-6.76-4.35-11.58v-1.93C43.51 50.27 49.47 31.2 61.05 0z">
+                                </path>
+                            </svg> </span><span class="quote-text">Born with a vision to innovate where it matters the
+                            most.</span>
+                    </blockquote>
+                    <div class="df aic details" style="display: none;">
+                        <div id="vision-anim-bg" class="df aic jcc">
+                            <div id="vision-anim">
+                                <canvas id="vision-anim--canvas"></canvas>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <span class="serif fw600 number">15%</span>
+                            <p class="tone df aie">
+                                Of the world’s population experience some form of disability.
+                                This number will double by 2050.
+                            </p>
+                            <hr />
+                            <p class="ttwo">
+                                Innovation in the care and disability sectors can have a
+                                direct impact on a person's quality of life.<br /><br />We do
+                                what we do because we believe design and technology can
+                                improve outcomes for those who need it most.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <hr class="bg-dark mhr" />
+                <section class="principles" data-scroll-section="">
+                    <h3 class="serif fw500">
+                        <span class="db">Principles</span>
+                        <span class="db c-red">which guide's me</span>
+                    </h3>
+                    <ul class="principle-list">
+                        <li class="df fc">
+                            <div class="">
+                                <picture><img width="1" height="1" alt="Alt text"
+                                        src="images/d729425e4dd2af7c4a9ad99e75b19cfccc46601f-169x168.svg" /></picture>
+                                <span class="serif fw500">My clients needs are paramount</span>
+                                <p class="fw500">
+                                    My focus is always on understanding your needs in everything
+                                    that we do.
+                                </p>
+                            </div>
+                            <hr />
+                        </li>
+                        <li class="df fc">
+                            <div class="">
+                                <picture><img width="1" height="1" alt=""
+                                        src="images/b14f50225a0f94ca441d61d19a7a0e59c0e6dd06-167x166.svg" /></picture>
+                                <span class="serif fw500">Stay open and learn from mistakes.</span>
+                                <p class="fw500">
+                                    Mistakes are where we learn the most. I listen, iterate and
+                                    collaborate to overcome obstacles and improve outcomes for
+                                    all involved.
+                                </p>
+                            </div>
+                            <hr />
+                        </li>
+                        <li class="df fc">
+                            <div class="">
+                                <picture><img width="1" height="1" alt="accessibility "
+                                        src="images/5e4d55b6c8bea053d9696b0220746343d0e23d90-113x113.svg" /></picture>
+                                <span class="serif fw500">Design for accessibility always.</span>
+                                <p class="fw500">
+                                    Research, refine, share and learn in the fields of usability
+                                    and accessibility. Design universally.
+                                </p>
+                            </div>
+                            <hr />
+                        </li>
+                        <li class="df fc" style="display: none;">
+                            <div class="">
+                                <picture><img width="1" height="1" alt="Alt text"
+                                        src="images/3a007f413b5351aa6c9120444f3235e1b2c72000-175x174.svg" /></picture>
+                                <span class="serif fw500">Innovate to improve outcomes.</span>
+                                <p class="fw500">
+                                    Innovation is the best way to improve outcomes
+                                    for those in care.
+                                </p>
+                            </div>
+                            <hr />
+                        </li>
+                    </ul>
+                </section>
+                <hr class="bluu" data-scroll-section="" />
+                <section class="featured df aic" data-scroll-section="">
+                    <a class="df jcb" href="/works/">
+                        <div class="back-arrow">
+                            <svg viewBox="0 0 100 100" fill="none">
+                                <use xlink:href="#d-feat-larr"></use>
+                            </svg>
+                        </div>
+                        <div class="df fc">
+                            <h4 class="serif">Featured Projects</h4>
+                            <p>
+                                A selection of in house projects, client projects and upcoming
+                                projects is my area's of practice.
+                            </p>
+                        </div>
+                        <picture><img width="1" height="1" alt="smiley face" src="images/smile.svg" />
+                            <svg viewBox="0 0 62 62" fill="none">
+                                <use xlink:href="#m-feat-arr"></use>
+                            </svg>
+                        </picture>
+                    </a>
+                </section>
+                <footer-mary-contact></footer-mary-contact>
+            </div>
+        </main>
+    </div>
+    <div id="text-reveal"></div>
+    <svg id="svg" class="abs" height="0" width="0">
+        <symbol id="d-rarr" viewBox="0 0 17 12">
+            <path fill="#fff"
+                d="M16.53 6.53c.3-.3.3-.77 0-1.06L11.76.7a.75.75 0 00-1.06 1.06L14.94 6l-4.24 4.24a.75.75 0 001.06 1.06l4.77-4.77zM0 6.75h16v-1.5H0v1.5z">
+            </path>
+        </symbol>
+        <symbol id="m-feat-arr" viewBox="0 0 62 62">
+            <circle cx="30.81" cy="30.81" r="30.81" fill="#FF9776"></circle>
+            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.46"
+                d="M37.88 34.38l.85-10.66-10.66-.85M20.07 39.63l18.66-15.9"></path>
+        </symbol>
+        <symbol id="case-item-arr" viewBox="0 0 19 19">
+            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.78"
+                d="M1.23 9.29h16.04M9.25 1.26l8.02 8.03-8.02 8.02"></path>
+        </symbol>
+        <symbol id="d-feat-larr" viewBox="0 0 37 37">
+            <path stroke="#FF9776" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                d="M12.39 13.98L2.1 24.25 12.4 34.53"></path>
+            <path stroke="#FF9776" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                d="M35 1.64v14.4a8.22 8.22 0 01-8.22 8.21H2.1"></path>
+        </symbol>
+        <symbol id="d-case-rarr" viewBox="0 0 100 100">
+            <path stroke="#FF9776" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                d="M60.61 54.11L70.9 43.83 60.6 33.56"></path>
+            <path stroke="#FF9776" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                d="M38 66.44V52.06a8.22 8.22 0 018.22-8.23H70.9"></path>
+        </symbol>
+        <symbol id="m-case-rarr" viewBox="0 0 62 62">
+            <circle cx="30.81" cy="30.81" r="30.81" fill="#FF9776"></circle>
+            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.46"
+                d="M34.1 39.24l7.56-7.56-7.56-7.56M17.14 31.68h24.52"></path>
+        </symbol>
+        <symbol id="p-about" viewBox="0 0 46 49">
+            <ellipse cx="23" cy="24.68" fill="#fff" rx="23" ry="23.82"></ellipse>
+            <path stroke="#8283DA" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M23 15.52v3.66M23 30.18v3.66M16.75 18.2l2.5 2.6M26.75 28.56l2.5 2.6M14.15 24.68h3.54M28.3 24.68h3.55M16.75 31.16l2.5-2.6M26.75 20.8l2.5-2.6">
+            </path>
+        </symbol>
+        <symbol id="p-works" viewBox="0 0 46 46">
+            <circle cx="23" cy="23" r="23" fill="#fff"></circle>
+            <path stroke="#FF9776" stroke-linejoin="round" stroke-width="2"
+                d="M23 15s.75 4.13 2.43 5.92C27.11 22.7 31 23.5 31 23.5s-3.89.8-5.57 2.58C23.75 27.87 23 32 23 32s-.75-4.13-2.43-5.92C18.89 24.3 15 23.5 15 23.5s3.89-.8 5.57-2.58C22.25 19.13 23 15 23 15z">
+            </path>
+        </symbol>
+        <symbol id="p-resources" viewBox="0 0 46 46">
+            <circle cx="23" cy="23" r="23" fill="#fff"></circle>
+            <path stroke="#FF667D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M14.15 15.92h5.31A3.54 3.54 0 0123 19.46v12.39a2.65 2.65 0 00-2.65-2.66h-6.2V15.92z"></path>
+            <path stroke="#FF667D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M31.85 15.92h-5.31A3.54 3.54 0 0023 19.46v12.39a2.65 2.65 0 012.65-2.66h6.2V15.92z"></path>
+        </symbol>
+        <symbol id="p-back" viewBox="0 0 46 46">
+            <circle cx="23" cy="23" r="23" fill="#fff"></circle>
+            <path stroke="#FF667D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M29 23H17M21.7 27.7L17 23l4.7-4.7"></path>
+        </symbol>
+        <symbol id="m-f-top--sprite" viewBox="0 0 33 33">
+            <circle cx="16.5" cy="16.5" r="16.17" stroke="#fff" stroke-opacity=".25" stroke-width=".66"
+                transform="rotate(-180 16.5 16.5)"></circle>
+            <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.32"
+                d="M16.5 21v-9M12 16.5l4.5-4.5 4.5 4.5"></path>
+        </symbol>
+        <symbol id="quote-sprite" viewBox="0 0 78 76">
+            <path fill="#56CCF2"
+                d="M16.9 42.47c5.3 0 9.48 1.53 12.54 4.58 3.21 2.9 4.82 6.84 4.82 11.83 0 4.82-1.6 8.76-4.82 11.82-3.06 2.9-7.24 4.34-12.55 4.34-5.15 0-9.25-1.45-12.3-4.34C1.52 67.8 0 63.94 0 59.12v-1.93C.32 50.27 6.35 31.2 18.1 0h15.92v1.45L8.2 43.19l1.21.48v.25c2.1-.97 4.58-1.45 7.48-1.45zM61.04 0H77.2v1.45L51.4 43.19l.96.48v.25a18.8 18.8 0 017.48-1.45c5.3 0 9.5 1.53 12.55 4.58 3.22 2.9 4.82 6.84 4.82 11.83 0 4.82-1.6 8.76-4.82 11.82-3.06 2.9-7.24 4.34-12.55 4.34-5.15 0-9.25-1.45-12.3-4.34-2.9-2.9-4.35-6.76-4.35-11.58v-1.93C43.51 50.27 49.47 31.2 61.05 0z">
+            </path>
+        </symbol>
+    </svg>
+    <script defer="defer">
+        (function () {
+            var s = document.createElement("script");
+            var h = document.querySelector("head") || document.body;
+            s.src = "https://acsbapp.com/apps/app/dist/js/app.js";
+            s.async = true;
+            s.onload = function () {
+                acsbJS.init({
+                    statementLink: "",
+                    footerHtml: "",
+                    hideMobile: false,
+                    hideTrigger: false,
+                    disableBgProcess: false,
+                    language: "en",
+                    position: "left",
+                    leadColor: "#ff667d",
+                    triggerColor: "#ff667d",
+                    triggerRadius: "50%",
+                    triggerPositionX: "right",
+                    triggerPositionY: "bottom",
+                    triggerIcon: "wheels",
+                    triggerSize: "medium",
+                    triggerOffsetX: 20,
+                    triggerOffsetY: 20,
+                    mobile: {
+                        triggerSize: "small",
+                        triggerPositionX: "right",
+                        triggerPositionY: "center",
+                        triggerOffsetX: 10,
+                        triggerOffsetY: 0,
+                        triggerRadius: "50%",
+                    },
+                });
+            };
+            h.appendChild(s);
+        })();
+    </script>
+    <script src="js/template.js"></script>
+</body>
+
+</html>
