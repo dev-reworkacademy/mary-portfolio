@@ -1,5 +1,6 @@
 
 class FooterMaryContact extends HTMLElement {
+    // <li><a class="link" href="/resources/">Resources</a></li>
     connectedCallback() {
         this.innerHTML = `
         <div class="footer-wrapper" data-scroll-track="footer">
@@ -23,8 +24,8 @@ class FooterMaryContact extends HTMLElement {
                 <div class="df fc pages">
                     <span>PAGES</span>
                     <ul>
-                        <li><a class="link" href="/works/">Works</a></li>
-                        <li><a class="link" href="/resources/">Resources</a></li>
+                        <li><a class="link" href="works.html">Works</a></li>
+                   
                     </ul>
                 </div>
                 <div class="reach df aic">
@@ -36,24 +37,15 @@ class FooterMaryContact extends HTMLElement {
                 <ul class="df aic social">
                     <li>
                         <a aria-label="link to linkedin" target="_blank" rel="noreferrer nofollow"
-                            href="https://www.linkedin.com/company/74751293"><img width="1" height="1"
+                            href="https://www.linkedin.com/in/ajoma-mary-5a50a2235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img width="1" height="1"
                                 alt="linkedin icon" src="images/ln.svg" /></a>
                     </li>
                     <li>
                         <a aria-label="link to instagram" target="_blank" rel="noreferrer nofollow"
-                            href="https://www.instagram.com/display.care/"><img width="1" height="1"
+                            href="https://www.instagram.com/design_droplet?igsh=MWgzdDh0bjVpcTFiaA%3D%3D&utm_source=qr"><img width="1" height="1"
                                 alt="instagram icon" src="images/in.svg" /></a>
                     </li>
-                    <li>
-                        <a aria-label="link to twitter" target="_blank" rel="noreferrer nofollow"
-                            href="https://twitter.com/studio_display"><img width="1" height="1"
-                                alt="twitter icon" src="images/tw.svg" /></a>
-                    </li>
-                    <li>
-                        <a aria-label="link to medium" target="_blank" rel="noreferrer nofollow"
-                            href="https://medium.com/@studio_display"><img width="1" height="1"
-                                alt="medium icon" src="images/md.svg" /></a>
-                    </li>
+                  
                 </ul>
                 <span class="logo serif df aic">
                     <picture class="logo-img"><img width="1" height="1" alt="alt text" src="images/logo2.svg" />
