@@ -59,6 +59,25 @@ class FooterMaryContact extends HTMLElement {
     }
 }
 
+/*    <li>
+                            <div class="nav-el--bg top left right bottom bg-red"></div>
+                            <a class="df ais jcb" href="/resources/">
+                                <div>
+                                    <svg fill="none" viewBox="0 0 46 46">
+                                        <circle cx="23" cy="23" r="23" fill="#fff"></circle>
+                                        <path stroke="#FF667D" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M14.15 15.92h5.31A3.54 3.54 0 0123 19.46v12.39a2.65 2.65 0 00-2.65-2.66h-6.2V15.92z">
+                                        </path>
+                                        <path stroke="#FF667D" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M31.85 15.92h-5.31A3.54 3.54 0 0023 19.46v12.39a2.65 2.65 0 012.65-2.66h6.2V15.92z">
+                                        </path>
+                                    </svg>
+                                    <span><span class="nav-line">Resources</span></span>
+                                </div>
+                            </a>
+                        </li>*/
 
 class HeaderMaryInfo extends HTMLElement {
     connectedCallback() {
@@ -93,28 +112,10 @@ class HeaderMaryInfo extends HTMLElement {
                                 </div>
                             </a>
                         </li>
-                        <li>
-                            <div class="nav-el--bg top left right bottom bg-red"></div>
-                            <a class="df ais jcb" href="/resources/">
-                                <div>
-                                    <svg fill="none" viewBox="0 0 46 46">
-                                        <circle cx="23" cy="23" r="23" fill="#fff"></circle>
-                                        <path stroke="#FF667D" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2"
-                                            d="M14.15 15.92h5.31A3.54 3.54 0 0123 19.46v12.39a2.65 2.65 0 00-2.65-2.66h-6.2V15.92z">
-                                        </path>
-                                        <path stroke="#FF667D" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2"
-                                            d="M31.85 15.92h-5.31A3.54 3.54 0 0023 19.46v12.39a2.65 2.65 0 012.65-2.66h6.2V15.92z">
-                                        </path>
-                                    </svg>
-                                    <span><span class="nav-line">Resources</span></span>
-                                </div>
-                            </a>
-                        </li>
+                    
                         <li>
                             <div class="nav-el--bg top left right bottom bg-orange"></div>
-                            <a class="df ais jcb" href="/works/">
+                            <a class="df ais jcb" href="works.html">
                                 <div>
                                     <svg fill="none" viewBox="0 0 46 46">
                                         <circle cx="23" cy="23" r="23" fill="#fff"></circle>
@@ -128,7 +129,7 @@ class HeaderMaryInfo extends HTMLElement {
                         </li>
                         <li>
                             <div class="nav-el--bg top left right bottom bg-blue"></div>
-                            <a class="df ais jcb" href="/">
+                            <a class="df ais jcb" href="index.html">
                                 <div>
                                     <svg fill="none" viewBox="0 0 46 49">
                                         <ellipse cx="23" cy="24.68" fill="#fff" rx="23" ry="23.82"></ellipse>
